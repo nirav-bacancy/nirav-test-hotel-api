@@ -33,3 +33,14 @@ A hotel can have zero or more reviews.
 -   Description of the review
 -   Author
 -   Date review was made
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+TO run this project follow below instrunction
+1) clone this project 
+2) in cmd go to root folder then type "composer install"
+3) Generate the .env file 
+4) set database in env file & in cmd type "php artisan config:clear"
+5) in cmd in root folder type "php artisan migrate" to generate the database schema
+6) then type "php artisan db:seed" to add dummy data
+7) By this url you will get all the hotel data based on hotel id
+http://localhost/laravel-api-test/public/api/hotel/2 
+hear 2 is hotel id
