@@ -37,13 +37,13 @@ class UserSeeder extends Seeder
         ];
 
         $count = User::count();
-        
+
         // If no user then add
         if ($count == 0) {
-                
+
             foreach ($data as $userData) {
                 User::create($userData);
             }
         }
     }
-}    
+}

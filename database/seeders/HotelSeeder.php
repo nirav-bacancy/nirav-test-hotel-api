@@ -55,15 +55,13 @@ class HotelSeeder extends Seeder
         ];
 
         $count = Hotel::count();
-        
+
         // If no hotel then add
         if ($count == 0) {
             foreach ($data as $hotelData) {
-                
+
                 Hotel::create($hotelData);
             }
-            
-            //$this->createAreaLanguage();
         }
     }
 }

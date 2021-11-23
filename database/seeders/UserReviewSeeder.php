@@ -19,55 +19,53 @@ class UserReviewSeeder extends Seeder
             0 => [
                 'title' => 'Good Hotel Hyaat',
                 'description' => 'Hyaat is a very nice hotel.',
-                'author_id' => 1 ,
-                'hotel_id' => 1 ,
+                'author_id' => 1,
+                'hotel_id' => 1,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             1 => [
                 'title' => 'Good Hotel Hyaat',
                 'description' => 'Hyaat is a very nice hotel.',
-                'author_id' => 2 ,
-                'hotel_id' => 1 ,
+                'author_id' => 2,
+                'hotel_id' => 1,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             2 => [
                 'title' => 'Good Hotel Taj',
                 'description' => 'Taj is a very nice hotel.',
-                'author_id' => 1 ,
-                'hotel_id' => 2 ,
+                'author_id' => 1,
+                'hotel_id' => 2,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             3 => [
                 'title' => 'Good Hotel Taj',
                 'description' => 'Taj is a very nice hotel.',
-                'author_id' => 2 ,
-                'hotel_id' => 2 ,
+                'author_id' => 2,
+                'hotel_id' => 2,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             4 => [
                 'title' => 'Good Hotel Holiday Inn',
                 'description' => 'Holiday Inn is a very nice hotel.',
-                'author_id' => 2 ,
-                'hotel_id' => 3 ,
+                'author_id' => 2,
+                'hotel_id' => 3,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ]
         ];
 
         $count = Review::count();
-        
+
         // If no Review then add
         if ($count == 0) {
             foreach ($data as $reviewData) {
-                
+
                 Review::create($reviewData);
             }
-            
-            //$this->createAreaLanguage();
         }
     }
 }
