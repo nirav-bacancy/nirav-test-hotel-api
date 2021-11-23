@@ -52,7 +52,7 @@ class UserReviewSeeder extends Seeder
                 'title' => 'Good Hotel Holiday Inn',
                 'description' => 'Holiday Inn is a very nice hotel.',
                 'author_id' => 2 ,
-                'hotel_id' => 2 ,
+                'hotel_id' => 3 ,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ]
