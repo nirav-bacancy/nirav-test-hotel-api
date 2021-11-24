@@ -9,3 +9,9 @@ define('NOTFOUND', '400'); // Not Found
 
 define('HOTELDATANOTFOUNDMSG', 'Hotel Data Not found');
 define('HOTELDATAMSG', 'Hotel Data');
+
+define('supplierArray',[
+    1=> 'Own',
+    2=> 'HotelBeds',
+    3=> 'SunHotels'
+]);

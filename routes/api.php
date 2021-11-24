@@ -14,16 +14,8 @@ use App\Http\Controllers\Api\HotelController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+// route for fetch all active hotels data
+Route::get('hotels', [HotelController::class,'getAllHotelData']);
 
-/*Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-*/
-
-/*Route::get('hotel/{hotel_id}', function (Request $request) {
-    dd("aaaaa");
-});*/
-
-Route::get('hotel/{hotel_id}', [HotelController::class,'getHotelData']);
-
-
+// route for fetch the active hotel data based on hotel id
+Route::get('hotel/{hotel_id}', [HotelController::class,'getHotelDataById']);

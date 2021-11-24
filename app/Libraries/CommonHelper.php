@@ -2,12 +2,15 @@
 
 namespace App\Libraries;
 
-use Illuminate\Support\Str;
-use Illuminate\Http\Request;
-
 class CommonHelper
 {
-    public static function customErrorResponse($errors)
+    /**
+     * Used for set the validation related error messages.
+     * 
+     * @param object $errors 
+     * @return string 
+     */
+    public static function customErrorResponse(object $errors): string
     {
         $error_str = '';
         foreach ($errors as $error) {
